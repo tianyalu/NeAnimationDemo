@@ -23,9 +23,10 @@ public class MyObjectAnimator implements VSYNCManager.AnimationFrameCallback{
     }
 
     public static MyObjectAnimator ofFloat(View target, String propertyName, float... values) {
-        MyObjectAnimator anim = new MyObjectAnimator(target, propertyName);
+        MyObjectAnimator anim = new MyObjectAnimator(target, propertyName, values);
         return anim;
     }
+
 
     //每隔16ms执行一次
     @Override

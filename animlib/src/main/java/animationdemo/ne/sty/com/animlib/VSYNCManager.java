@@ -12,7 +12,9 @@ public class VSYNCManager {
     private static final VSYNCManager instance = new VSYNCManager();
     private List<AnimationFrameCallback> list = new ArrayList<>();
 
-    private VSYNCManager(){}
+    private VSYNCManager(){
+        new Thread(runnable).start();
+    }
 
     public static VSYNCManager getInstance() {
         return instance;
