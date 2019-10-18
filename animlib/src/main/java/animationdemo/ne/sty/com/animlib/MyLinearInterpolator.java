@@ -1,6 +1,7 @@
 package animationdemo.ne.sty.com.animlib;
 
 /**
+ * 插值器，控制进度
  * Created by tian on 2019/10/17.
  */
 

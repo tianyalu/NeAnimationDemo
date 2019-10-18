@@ -43,7 +43,7 @@ public class MyKeyframeSet {
             MyFloatKeyFrame nextKeyFrame = mKeyFrames.get(i);
             if(fraction < nextKeyFrame.getFraction()) {
                 //当前百分比在此之前
-                //计算间隔百分比
+                //计算 间隔 百分比
                 float intervalFraction = (fraction - prevKeyFrame.getFraction())
                         / (nextKeyFrame.getFraction() - prevKeyFrame.getFraction());
                 //通过估值器返回对应的值
